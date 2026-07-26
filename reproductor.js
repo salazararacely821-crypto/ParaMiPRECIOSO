@@ -8,7 +8,6 @@ function inicializarPaginas() {
         pagina.classList.remove('pasada');
     });
 
-    // Verificar si ya respondió anteriormente en este navegador
     comprobarRespuestaGuardada();
 }
 
@@ -76,17 +75,39 @@ if (playBtn && audio) {
 }
 
 /* ==========================================
-   RESPUESTAS DE LA PROPUESTA CON PERSISTENCIA
+   ENVÍO DE RESPUESTA AL CORREO (WEB3FORMS)
    ========================================== */
+
+const WEB3FORMS_KEY = '18d253f7-f7f8-4d16-93be-cc146827d5c4'; 
+
+function enviarRespuestaAlCorreo(respuestaTexto) {
+    fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            access_key: WEB3FORMS_KEY,
+            subject: "¡Nueva respuesta en tu libro interactivo! ❤️",
+            from_name: "Libro de Propuesta",
+            message: `Respuesta recibida: ${respuestaTexto}`
+        })
+    })
+    .then(response => console.log("Notificación enviada al correo."))
+    .catch(error => console.error("Error al enviar la notificación:", error));
+}
 
 function responderSi() {
     localStorage.setItem('respuestaPropuesta', 'si');
     mostrarMensajeExito();
+    enviarRespuestaAlCorreo("¡Dijo que SÍ! 🥰❤️");
 }
 
 function responderNo() {
     localStorage.setItem('respuestaPropuesta', 'no');
     mostrarMensajeNo();
+    enviarRespuestaAlCorreo("Dijo que NO... 🥺💔");
 }
 
 function mostrarMensajeExito() {
@@ -109,7 +130,6 @@ function mostrarMensajeNo() {
     if (secMensajeNo) secMensajeNo.style.display = 'block';
 }
 
-// Al cargar, consulta si ya se guardó alguna respuesta previamente
 function comprobarRespuestaGuardada() {
     const respuesta = localStorage.getItem('respuestaPropuesta');
     if (respuesta === 'si') {

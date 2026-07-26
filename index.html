@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Precioso ❤️</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="escena-libro">
+        <div class="libro" id="libro">
+
+            <!-- PÁGINA 1: PORTADA -->
+            <div class="pagina portada">
+                <div class="contenido-pagina">
+                    <h1 class="titulo-portada">ERES TODO LO QUE NECESITO EN ESTA VIDA</h1>
+                    <p class="subtitulo">¡Para mi precioso!</p>
+                    <div class="corazon-destacado">❤️</div>
+                    <img src="imagen/428942929326c43c7695f1c5be52136d.gif" alt="Pareja" class="img-portada" onerror="this.style.display='none'">
+                    <p class="indicador-paso">Toca para abrir ➔</p>
+                </div>
+            </div>
+
+            <!-- PÁGINA 2: ANTES DE COMENZAR -->
+            <div class="pagina">
+                <div class="contenido-pagina">
+                    <h2>ANTES DE COMENZAR</h2>
+                    <p class="subtitulo-linea">"En un universo lleno de historias, la nuestra siempre será mi favorita..."</p>
+                    <div class="corazon-grande">
+                        <img src="imagen/gif-heart-51.gif" alt="Calendario" class="img-calendario" onerror="this.style.display='none'">
+                    </div>
+                    <p class="indicador-paso">Toca para continuar ➔</p>
+                </div>
+            </div>
+
+            <!-- PÁGINA 3: CALENDARIO -->
+            <div class="pagina">
+                <div class="contenido-pagina">
+                    <h2>¡EL DÍA QUE TODO COMENZÓ!</h2>
+                    <img src="imagen/calendario.png" alt="Calendario" class="img-calendario" onerror="this.style.display='none'">
+                    <p>Gracias por esos momentos tan lindos que pasamos juntos ese dia todo fue magico, 
+                        ese dia sentia miedo y pena a lo que fuera a pasar, pero debo confesarte que soñaba con ese dia y que pasara lo que fuera a pasar..
+                    </p>
+                    <p class="indicador-paso">Toca para continuar ➔</p>
+                </div>
+            </div>
+
+            <!-- PÁGINA 4: FOTO Y MENSAJE -->
+            <div class="pagina">
+                <div class="contenido-pagina">
+                    <h2>MIS OJITOS SOLO TE VEN A TI MI PRECIOSO</h2>
+                    <p>Te elegí a ti porque me di cuenta de que vales la pena, vales los riesgos y vales toda la vida.</p>
+                    <img src="imagen/Snapchat-677721239.jpg" alt="Foto" class="img-marco" onerror="this.style.display='none'">
+                    <p class="indicador-paso">Toca para continuar ➔</p>
+                </div>
+            </div>
+
+            <!-- PÁGINA 5: RECORDATORIO -->
+            <div class="pagina">
+                <div class="contenido-pagina">
+                    <h2>RECORDATORIO</h2>
+                    <p class="frase-morada">Cada día me gustas más ❤️</p>
+                    <p>Gracias por ser mi lugar seguro, gracias por quererme tanto, por demostrarme que haberte elegido fue una buena elección y no me arrepiento.</p>
+                    <img src="imagen/p.jpg" alt="Dibujo" class="img-dibujo" onerror="this.style.display='none'">
+                    <p class="indicador-paso">Toca para continuar ➔</p>
+                </div>
+            </div>
+
+            <!-- PÁGINA 6: VALES DE AMOR -->
+            <div class="pagina">
+                <div class="contenido-pagina">
+                    <h2>VALES DE AMOR (CUPONES CANJEABLES)</h2>
+                    <div class="cupones-lista">
+                        <div class="cupon">
+                            <strong>🎟️ Vale por un beso cuando y donde quieras</strong>
+                            <p class="condicion">Canjeable de inmediato, no importa si estamos en público.</p>
+                        </div>
+                        <div class="cupon">
+                            <strong>🎟️ Vale por recordar lo mucho que te amo</strong>
+                            <p class="condicion">Canjeable infinitas veces.</p>
+                        </div>
+                    </div>
+                    <p class="indicador-paso">Toca para continuar ➔</p>
+                </div>
+            </div>
+
+            <!-- PÁGINA 7: CALCULADORA -->
+            <div class="pagina">
+                <div class="contenido-pagina">
+                    <h2>SEGÚN MIS CÁLCULOS</h2>
+                    <img src="imagen/cal.png" alt="Calculadora Eres Mio" class="img-calculadora" onerror="this.style.display='none'">
+                    <p class="frase-destacada">¡NI MODOS PRECIOSO YA LLEGASTE A MI VIDA Y DESLLEGADA YA NO HAY❤️!</p>
+                    <p class="indicador-paso">Toca para continuar ➔</p>
+                </div>
+            </div>
+
+            <!-- PÁGINA 8: CANCIÓN CANSERBERO -->
+            <div class="pagina">
+                <div class="contenido-pagina">
+                    <h2>CREO QUE CON ESTA CANCIÓN TE DIGO TODO LO QUE SIENTO POR TI Y LO QUE ME HACES SENTIR MI NIÑO ❤️</h2>
+                    <div class="reproductor-card">
+                        <img src="imagen/cancion.jpg" class="portada-cancion" alt="Portada" onerror="this.style.display='none'">
+                        <div class="info-cancion">
+                            <h3>Querer Querernos</h3>
+                            <p>Canserbero</p>
+                        </div>
+                        <div class="barra-progreso-container">
+                            <input type="range" id="progress" value="0" min="0" max="100">
+                            <div class="tiempos">
+                                <span id="current-time">0:00</span>
+                                <span id="duration">3:58</span>
+                            </div>
+                        </div>
+                        <div class="controles-musica">
+                            <button type="button" class="btn-play" id="play-btn">▶</button>
+                        </div>
+                        <audio id="audio" src="musica/Canserbero.mp3"></audio>
+                    </div>
+                    <p class="indicador-paso">Toca para continuar ➔</p>
+                </div>
+            </div>
+
+            <!-- PÁGINA 9: FRASE PREVIA A LA PROPUESTA -->
+            <div class="pagina">
+                <div class="contenido-pagina">
+                    <h2>Y FINALMENTE LA RAZÓN VERDADERA POR LA QUE HICE ESTE LIBRO PARA TI MI AMOR ES PORQUE TENGO QUE PREGUNTARTE ALGO... 🧐</h2>
+                    <p class="frase-centro">PERO</p>
+                    <div class="globo-frase">
+                        <p>"Si algún día dudas entre mí y otra persona, no me elijas"</p>
+                    </div>
+                    <p class="indicador-paso">Toca para continuar ➔</p>
+                </div>
+            </div>
+
+            <!-- PÁGINA 10: PROPUESTA -->
+            <div class="pagina">
+                <div class="contenido-pagina card-propuesta">
+                    <div id="seccion-pregunta">
+                        <div class="corazon-animado">💖</div>
+                        <h2 class="pregunta-titulo">¿Quieres ser mi novio, precioso?</h2>
+                        <div class="botones-propuesta">
+                            <button id="btn-si" type="button" onclick="responderSi()">¡Sí! 🥰</button>
+                            <button id="btn-no" type="button" onclick="responderNo()">No 🥺</button>
+                        </div>
+                    </div>
+
+                    <div id="seccion-mensaje" style="display: none;" class="mensaje-exito">
+                        <h2>¡SABÍA QUE DIRÍAS QUE SÍ! 🥰</h2>
+                        <p>Prometo hacerte muy feliz todos los días. ❤️</p>
+                        <p> <br> Saber que me dices que sí me llena de ilusión, pero sobre todo de ganas de hacer las cosas bien. Para mí esto significa mucho y quiero que sepas que estoy aquí para sumarle cosas bonitas a tu vida, sacarte sonrisas y acompañarte en todo lo que venga. Estoy profundamente feliz de que este sea nuestro nuevo comienzo</p>
+
+                        <br><p>❤️</p>
+                        
+                    </div>
+
+                    <div id="seccion-mensaje-no" style="display: none;" class="mensaje-no">
+                        <h2>¡GRACIAS POR TU RESPUESTA! 😜</h2>
+                        <p>Entendido. Me duele un poco, pero prefiero las cosas claras. De verdad espero que encuentres todo lo que buscas y seas muy feliz, aunque no sea conmigo. Yo sé que llegará la persona correcta, alguien que sí quiera estar en mi vida tanto como yo en la suya. Te deseo lo mejor. </p>
+
+                        <p>❤️</p>
+                    </div>
+                    <p class="indicador-paso">Toca para continuar ➔</p>
+                </div>
+            </div>
+
+            <!-- PÁGINA 11: NUEVA HOJA FINAL PARA FOTO Y DESCRIPCIÓN -->
+            <div class="pagina">
+                <div class="contenido-pagina">
+                    <h2>MI MOMENTO FAVORITO CUANDO ESTAMOS A KILOMETROS ❤️</h2>
+                    <img src="imagen/2f303a8a8f6eb90bf8693a0e03b78219.jpg" alt="Foto especial" class="img-marco" onerror="this.style.display='none'">
+                    <p class="descripcion-final">
+                        Amo cada detalle tuyo, pero mis momentos preferidos siempre serán nuestras llamadas. Aunque estemos lejos, escuchar tu risa y hablar de cualquier cosa hace que todo valga la pena. Eres mi lugar favorito, incluso a través de una pantalla..
+                    </p>
+                    <div class="corazon-grande">💖</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CONTROLES -->
+    <div class="controles-libro">
+        <button type="button" onclick="paginaAnterior()">◀ Hoja Anterior</button>
+        <button type="button" onclick="siguientePagina()">Siguiente Hoja ▶</button>
+    </div>
+
+    <script src="reproductor.js"></script>
+</body>
+</html>>
